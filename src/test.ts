@@ -29,6 +29,7 @@ getTestBed().initTestEnvironment(
   platformBrowserDynamicTesting()
 );
 
+// tslint:disable-next-line:max-line-length
 // load all tests, and then filter into specFiles array if the test path matches the `part#` passed in as an argument into the variable `part`
 const context = require.context('./', true, /projects\.spec\.ts/)
 let specFiles = context.keys().filter((path) => {
